@@ -24,7 +24,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.inventory"
+        applicationId = "br.edu.up.rgm34305491"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -63,7 +63,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    namespace = "com.example.inventory"
+    namespace = "br.edu.up.rgm34305491"
 }
 
 dependencies {

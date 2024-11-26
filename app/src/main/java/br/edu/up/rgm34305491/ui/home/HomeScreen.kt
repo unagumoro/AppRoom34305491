@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.home
+package br.edu.up.rgm34305491.ui.home
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -47,12 +47,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.inventory.InventoryTopAppBar
-import com.example.inventory.R
-import com.example.inventory.data.Item
-import com.example.inventory.ui.item.formatedPrice
-import com.example.inventory.ui.navigation.NavigationDestination
-import com.example.inventory.ui.theme.InventoryTheme
+import br.edu.up.rgm34305491.R
+import br.edu.up.rgm34305491.InventoryTopAppBar
+import br.edu.up.rgm34305491.data.Item
+import br.edu.up.rgm34305491.ui.item.formatedPrice
+import br.edu.up.rgm34305491.ui.navigation.NavigationDestination
+import br.edu.up.rgm34305491.ui.theme.InventoryTheme
 
 object HomeDestination : NavigationDestination {
     override val route = "home"

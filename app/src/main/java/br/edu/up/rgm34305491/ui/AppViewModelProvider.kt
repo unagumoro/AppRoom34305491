@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui
+package br.edu.up.rgm34305491.ui
 
 import android.app.Application
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory
@@ -22,11 +22,11 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.example.inventory.InventoryApplication
-import com.example.inventory.ui.home.HomeViewModel
-import com.example.inventory.ui.item.ItemDetailsViewModel
-import com.example.inventory.ui.item.ItemEditViewModel
-import com.example.inventory.ui.item.ItemEntryViewModel
+import br.edu.up.rgm34305491.InventoryApplication
+import br.edu.up.rgm34305491.ui.home.HomeViewModel
+import br.edu.up.rgm34305491.ui.item.ItemDetailsViewModel
+import br.edu.up.rgm34305491.ui.item.ItemEditViewModel
+import br.edu.up.rgm34305491.ui.item.ItemEntryViewModel
 
 /**
  * Provides Factory to create instance of ViewModel for the entire Inventory app

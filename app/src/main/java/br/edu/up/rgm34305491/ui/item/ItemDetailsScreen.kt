@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.item
+package br.edu.up.rgm34305491.ui.item
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
@@ -52,11 +52,11 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.inventory.InventoryTopAppBar
-import com.example.inventory.R
-import com.example.inventory.data.Item
-import com.example.inventory.ui.navigation.NavigationDestination
-import com.example.inventory.ui.theme.InventoryTheme
+import br.edu.up.rgm34305491.R
+import br.edu.up.rgm34305491.InventoryTopAppBar
+import br.edu.up.rgm34305491.data.Item
+import br.edu.up.rgm34305491.ui.navigation.NavigationDestination
+import br.edu.up.rgm34305491.ui.theme.InventoryTheme
 
 object ItemDetailsDestination : NavigationDestination {
     override val route = "item_details"

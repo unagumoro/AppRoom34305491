@@ -14,19 +14,21 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.navigation
+package br.edu.up.rgm34305491
 
-/**
- * Interface to describe the navigation destinations for the app
- */
-interface NavigationDestination {
-    /**
-     * Unique name to define the path for a composable
-     */
-    val route: String
+import android.app.Application
+import br.edu.up.rgm34305491.data.AppContainer
+import br.edu.up.rgm34305491.data.AppDataContainer
+
+class InventoryApplication : Application() {
 
     /**
-     * String resource id to that contains title to be displayed for the screen.
+     * AppContainer instance used by the rest of classes to obtain dependencies
      */
-    val titleRes: Int
+    lateinit var container: AppContainer
+
+    override fun onCreate() {
+        super.onCreate()
+        container = AppDataContainer(this)
+    }
 }

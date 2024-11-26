@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.item
+package br.edu.up.rgm34305491.ui.item
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.example.inventory.data.ItemsRepository
+import br.edu.up.rgm34305491.data.ItemsRepository
 
 /**
  * ViewModel to retrieve and update an item from the [ItemsRepository]'s data source.

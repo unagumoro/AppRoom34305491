@@ -14,6 +14,15 @@
  * limitations under the License.
  */
 
-package com.example.inventory.data
+package br.edu.up.rgm34305491.data
 
-class OfflineItemsRepository : ItemsRepository
+
+/**
+ * Entity data class represents a single row in the database.
+ */
+class Item(
+    val id: Int = 0,
+    val name: String,
+    val price: Double,
+    val quantity: Int
+)

@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package com.example.inventory
+package br.edu.up.rgm34305491.ui.home
 
-import android.app.Application
-import com.example.inventory.data.AppContainer
-import com.example.inventory.data.AppDataContainer
+import androidx.lifecycle.ViewModel
+import br.edu.up.rgm34305491.data.Item
 
-class InventoryApplication : Application() {
-
-    /**
-     * AppContainer instance used by the rest of classes to obtain dependencies
-     */
-    lateinit var container: AppContainer
-
-    override fun onCreate() {
-        super.onCreate()
-        container = AppDataContainer(this)
+/**
+ * ViewModel to retrieve all items in the Room database.
+ */
+class HomeViewModel : ViewModel() {
+    companion object {
+        private const val TIMEOUT_MILLIS = 5_000L
     }
 }
+
+/**
+ * Ui State for HomeScreen
+ */
+data class HomeUiState(val itemList: List<Item> = listOf())

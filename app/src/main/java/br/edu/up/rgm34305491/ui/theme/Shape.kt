@@ -13,22 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package br.edu.up.rgm34305491.ui.theme
 
-package com.example.inventory.ui.home
+import androidx.compose.foundation.shape.CutCornerShape
+import androidx.compose.material3.Shapes
+import androidx.compose.ui.unit.dp
 
-import androidx.lifecycle.ViewModel
-import com.example.inventory.data.Item
+val Shapes = Shapes(
 
-/**
- * ViewModel to retrieve all items in the Room database.
- */
-class HomeViewModel : ViewModel() {
-    companion object {
-        private const val TIMEOUT_MILLIS = 5_000L
-    }
-}
-
-/**
- * Ui State for HomeScreen
- */
-data class HomeUiState(val itemList: List<Item> = listOf())
+    extraSmall = CutCornerShape(topEnd = 8.dp, bottomStart = 8.dp),
+    small = CutCornerShape(topEnd = 8.dp, bottomStart = 8.dp),
+    medium = CutCornerShape(topEnd = 16.dp, bottomStart = 16.dp)
+)

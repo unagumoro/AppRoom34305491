@@ -14,15 +14,25 @@
  * limitations under the License.
  */
 
-package com.example.inventory.data
+package br.edu.up.rgm34305491.data
 
+import android.content.Context
 
 /**
- * Entity data class represents a single row in the database.
+ * App container for Dependency injection.
  */
-class Item(
-    val id: Int = 0,
-    val name: String,
-    val price: Double,
-    val quantity: Int
-)
+interface AppContainer {
+    val itemsRepository: ItemsRepository
+}
+
+/**
+ * [AppContainer] implementation that provides instance of [OfflineItemsRepository]
+ */
+class AppDataContainer(private val context: Context) : AppContainer {
+    /**
+     * Implementation for [ItemsRepository]
+     */
+    override val itemsRepository: ItemsRepository by lazy {
+        OfflineItemsRepository()
+    }
+}
